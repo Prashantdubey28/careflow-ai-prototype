@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Activity } from 'lucide-react'
+import { OpenPlatformButton } from '../ui/OpenPlatformButton'
 
 export function Navbar() {
   return (
@@ -14,12 +15,9 @@ export function Navbar() {
             <p className="hidden text-xs text-text-secondary sm:block">Connected clinic workflow for intake, consultation, and follow-up</p>
           </div>
         </Link>
-        <Link
-          to="/?entry=1"
-          className="rounded-xl bg-doctor px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-doctor/20 transition hover:-translate-y-0.5 hover:bg-teal-700"
-        >
+        <OpenPlatformButton className="rounded-xl bg-doctor px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-doctor/20 transition hover:-translate-y-0.5 hover:bg-teal-700">
           Open Platform
-        </Link>
+        </OpenPlatformButton>
       </div>
     </nav>
   )

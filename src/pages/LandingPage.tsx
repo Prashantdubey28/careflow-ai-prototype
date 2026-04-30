@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { Activity, ArrowRight, Brain, CheckCircle, FileText, Shield, Users, Workflow } from 'lucide-react'
 import { DemoEntrySection } from '../components/ui/DemoEntrySection'
+import { OpenPlatformButton } from '../components/ui/OpenPlatformButton'
 
 const featureBlocks = [
   {
@@ -91,9 +92,9 @@ export function LandingPage() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link to="/?entry=1" className="inline-flex items-center gap-2 rounded-2xl bg-doctor px-7 py-4 text-base font-semibold text-white shadow-lg shadow-doctor/20 transition hover:-translate-y-0.5 hover:bg-teal-700">
+              <OpenPlatformButton className="inline-flex items-center gap-2 rounded-2xl bg-doctor px-7 py-4 text-base font-semibold text-white shadow-lg shadow-doctor/20 transition hover:-translate-y-0.5 hover:bg-teal-700">
                 Open Platform <ArrowRight className="h-4 w-4" />
-              </Link>
+              </OpenPlatformButton>
               <div className="rounded-full border border-doctor/15 bg-white px-4 py-2 text-sm text-text-secondary shadow-sm">
                 AI supports doctors with summaries and guidance while clinical decisions stay with the physician.
               </div>
