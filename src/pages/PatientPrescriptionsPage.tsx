@@ -26,7 +26,7 @@ export function PatientPrescriptionsPage() {
     w.document.write(`<table><tr><th>Medicine</th><th>Dosage</th><th>Duration</th><th>Instructions</th></tr>`)
     rx.medicines.forEach((m) => w.document.write(`<tr><td>${m.name}</td><td>${m.dosage}</td><td>${m.duration}</td><td>${m.instructions}</td></tr>`))
     w.document.write(`</table><p><strong>Follow-up:</strong> ${rx.followUp}</p>`)
-    w.document.write(`<p class="footer">Demo prescription — JeevX prototype</p></body></html>`)
+    w.document.write(`<p class="footer">Issued through the JeevX patient portal.</p></body></html>`)
     w.document.close()
     w.print()
   }

@@ -11,24 +11,14 @@ export function Navbar() {
           </div>
           <div>
             <p className="text-base font-bold text-text-primary">JeevX</p>
-            <p className="hidden text-xs text-text-secondary sm:block">Investor demo prototype for AI-assisted clinic operations</p>
+            <p className="hidden text-xs text-text-secondary sm:block">Connected clinic workflow for intake, consultation, and follow-up</p>
           </div>
         </Link>
-
-        <div className="hidden items-center gap-2 md:flex">
-          <span className="rounded-full border border-doctor/15 bg-doctor/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-doctor">
-            Physician In Loop AI
-          </span>
-          <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-medium text-text-secondary">
-            Mocked data, guided workflow
-          </span>
-        </div>
-
         <Link
           to="/?entry=1"
           className="rounded-xl bg-doctor px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-doctor/20 transition hover:-translate-y-0.5 hover:bg-teal-700"
         >
-          Launch Demo
+          Open Platform
         </Link>
       </div>
     </nav>

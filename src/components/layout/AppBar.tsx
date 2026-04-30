@@ -7,9 +7,9 @@ const roleIcons = { doctor: Stethoscope, compounder: Heart, patient: Users }
 const roleColors = { doctor: 'bg-doctor', compounder: 'bg-compounder', patient: 'bg-patient' }
 const roleOrder: ClinicUser['role'][] = ['compounder', 'doctor', 'patient']
 const roleScenes = {
-  doctor: 'Consultation command center',
-  compounder: 'Front-desk intake and handoff',
-  patient: 'Retention and engagement portal',
+  doctor: 'Doctor workspace',
+  compounder: 'Intake and vitals',
+  patient: 'Patient portal',
 }
 
 export function AppBar() {
@@ -41,9 +41,6 @@ export function AppBar() {
           <div>
             <div className="flex items-center gap-2">
               <span className="text-sm font-bold text-text-primary group-hover:text-doctor">JeevX</span>
-              <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-text-secondary">
-                Investor Demo
-              </span>
             </div>
             <p className="text-[11px] text-text-secondary group-hover:text-text-primary">{roleScenes[role.role]}</p>
           </div>
@@ -52,7 +49,7 @@ export function AppBar() {
         <div className="hidden xl:flex">
           {selectedPatient && (
             <div className="rounded-full border border-doctor/15 bg-doctor/8 px-4 py-2 text-xs">
-              <span className="font-semibold text-doctor">Flagship Case:</span>{' '}
+              <span className="font-semibold text-doctor">Current Patient:</span>{' '}
               <span className="text-text-primary">{selectedPatient.name}</span>
               <span className="text-text-secondary"> • {selectedPatient.id}</span>
             </div>
@@ -93,7 +90,7 @@ export function AppBar() {
             </div>
           </div>
 
-          <button onClick={resetDemo} className="rounded-full border border-border bg-white p-2 text-text-secondary shadow-sm transition hover:bg-slate-50" title="Reset Demo">
+          <button onClick={resetDemo} className="rounded-full border border-border bg-white p-2 text-text-secondary shadow-sm transition hover:bg-slate-50" title="Reset Session">
             <RotateCcw className="h-4 w-4" />
           </button>
         </div>

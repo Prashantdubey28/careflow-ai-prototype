@@ -31,24 +31,24 @@ const roleConfig = {
     color: 'text-doctor',
     activeBg: 'bg-doctor/10',
     icon: Stethoscope,
-    headline: 'Clinical decision support',
-    summary: 'Show how one screen combines patient history, AI assistance, and prescription handoff.',
+    headline: 'Doctor workspace',
+    summary: 'Review history, AI-assisted insights, consultation notes, and prescriptions in one clinical view.',
   },
   compounder: {
     links: compounderLinks,
     color: 'text-compounder',
     activeBg: 'bg-compounder/10',
     icon: Heart,
-    headline: 'Operational intake workflow',
-    summary: 'Lead with queue discipline, faster vitals capture, and a cleaner doctor handoff.',
+    headline: 'Compounder workspace',
+    summary: 'Manage queue, capture complaints, record vitals, and hand patients off to the doctor.',
   },
   patient: {
     links: patientLinks,
     color: 'text-patient',
     activeBg: 'bg-patient/10',
     icon: Users,
-    headline: 'Retention and trust layer',
-    summary: 'Close the story with patient visibility into prescriptions, reports, and follow-ups.',
+    headline: 'Patient workspace',
+    summary: 'Access prescriptions, reports, appointments, and visit history from the patient portal.',
   },
 }
 
@@ -64,7 +64,7 @@ export function Sidebar() {
     <aside className="hidden w-64 shrink-0 border-r border-border/90 bg-white/85 backdrop-blur-xl lg:block">
       <div className="p-4">
         <div className={`mb-4 rounded-2xl border border-border bg-gradient-to-br from-white to-slate-50 p-4 shadow-sm ${config.color}`}>
-          <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-text-secondary">Demo Lens</p>
+          <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-text-secondary">Workspace</p>
           <h2 className="text-sm font-bold text-text-primary">{config.headline}</h2>
           <p className="mt-2 text-xs leading-relaxed text-text-secondary">{config.summary}</p>
         </div>
