@@ -64,13 +64,15 @@ export function DemoEntrySection() {
           </h2>
 
           <p className="mt-5 max-w-xl text-lg leading-8 text-text-secondary">
-            Open the role you want to use. Each workspace connects to the same patient record and care timeline.
+            Open the role you want to use. Every workspace connects to the same patient record, care timeline, and follow-up context.
           </p>
 
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              { icon: Activity, title: 'Shared patient context', text: 'Check-in, vitals, consultation notes, prescriptions, and reports remain connected across the clinic.' },
-              { icon: Brain, title: 'AI-assisted doctor workflow', text: 'AI helps the doctor summarize context, surface risks, and prepare next steps for review.' },
+              { icon: Brain, title: 'AI helps the doctor', text: 'AI supports review, summaries, and next-step preparation without replacing the doctor.' },
+              { icon: CheckCircle, title: 'Patients see live reports', text: 'Patients can open current reports, prescriptions, and visit updates directly in the portal.' },
+              { icon: Users, title: 'Three roles, one platform', text: 'Compounder, doctor, and patient stay connected in the same workflow instead of separate systems.' },
+              { icon: Activity, title: 'Continuous care record', text: 'A unified workflow reduces fragmented data and keeps continuity from intake through follow-up.' },
             ].map((item) => (
               <div key={item.title} className="premium-panel rounded-[1.5rem] p-5">
                 <div className="flex items-start gap-4">
@@ -157,7 +159,7 @@ export function DemoEntrySection() {
           </button>
 
           <p className="mt-4 text-center text-xs text-text-secondary">
-            AI-assisted features support doctor review and do not replace clinical judgment.
+            AI-assisted features help the doctor and do not replace clinical judgment.
           </p>
         </div>
       </div>

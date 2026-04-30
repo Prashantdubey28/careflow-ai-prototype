@@ -1,41 +1,47 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Activity, ArrowRight, Brain, ClipboardList, CheckCircle, FileText, Shield } from 'lucide-react'
+import { Activity, ArrowRight, Brain, CheckCircle, FileText, Shield, Users, Workflow } from 'lucide-react'
 import { DemoEntrySection } from '../components/ui/DemoEntrySection'
 
 const featureBlocks = [
   {
-    icon: ClipboardList,
-    color: 'text-compounder',
-    title: 'Capture intake once',
-    body: 'Check-in details, chief complaint, and vitals stay in the same patient record from front desk through consultation.',
-  },
-  {
     icon: Brain,
     color: 'text-doctor',
-    title: 'Support clinical review',
-    body: 'AI helps doctors review context, summarize findings, and prepare next steps while clinicians stay in control.',
+    title: 'AI supports the doctor',
+    body: 'AI helps the doctor review context, summarize findings, and prepare next steps without replacing clinical judgment.',
   },
   {
     icon: FileText,
     color: 'text-patient',
-    title: 'Keep patients informed',
-    body: 'Prescriptions, lab reports, appointments, and visit history remain available in the patient portal after each visit.',
+    title: 'Patients can access live reports',
+    body: 'Lab reports, prescriptions, visit history, and follow-up information stay available to patients in the portal.',
+  },
+  {
+    icon: Users,
+    color: 'text-compounder',
+    title: 'All three roles in one platform',
+    body: 'Compounder, doctor, and patient work inside the same connected system instead of passing information across separate tools.',
+  },
+  {
+    icon: Workflow,
+    color: 'text-doctor',
+    title: 'Unified workflow and continuity',
+    body: 'JeevX keeps the care journey systematic, removes fragmented data, and preserves continuity from intake to follow-up.',
   },
 ]
 
 const workspaceBlocks = [
   {
     title: 'Front desk and intake',
-    body: 'Manage the queue, capture complaints, and record vitals before handing the patient to the doctor.',
+    body: 'Manage the queue, capture complaints, and record vitals in the same patient record the doctor will continue using.',
   },
   {
     title: 'Doctor workspace',
-    body: 'Review patient history, current vitals, AI-assisted insights, consultation notes, and prescriptions in one place.',
+    body: 'Review patient history, current vitals, AI-assisted insights, consultation notes, and prescriptions without losing context.',
   },
   {
     title: 'Patient portal',
-    body: 'Give patients ongoing access to prescriptions, lab reports, visit history, and appointments.',
+    body: 'Give patients ongoing access to live reports, prescriptions, visit history, and appointments after each visit.',
   },
 ]
 
@@ -63,19 +69,19 @@ export function LandingPage() {
             </div>
 
             <h1 className="max-w-3xl text-4xl font-bold text-text-primary md:text-6xl">
-              Intake, consultation, and follow-up in one connected clinic workflow
+              One connected platform for compounders, doctors, and patients
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-text-secondary md:text-xl">
-              JeevX helps clinics move from check-in to consultation to patient follow-up without breaking the care record.
+              JeevX gives clinics a unified workflow from intake to consultation to follow-up, reducing fragmented data and maintaining care continuity.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
-                'Queue management, complaints, and vitals stay connected to the same patient record.',
-                'Doctors can review history, current vitals, lab context, and AI-assisted suggestions in one workspace.',
-                'Patients can access prescriptions, reports, appointments, and visit history in the same portal.',
-                'AI is designed to help doctors review context and next steps, not replace clinical judgment.',
+                'AI helps the doctor with context, summaries, and next-step suggestions without replacing the doctor.',
+                'Patients can access live reports, prescriptions, and visit updates directly in the portal.',
+                'Compounder, doctor, and patient all work in one unified platform with connected handoffs.',
+                'A systematic workflow removes fragmented data and preserves continuity across the full care journey.',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-2xl border border-white/70 bg-white/70 px-4 py-3 shadow-sm">
                   <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-doctor" />
@@ -89,7 +95,7 @@ export function LandingPage() {
                 Open Platform <ArrowRight className="h-4 w-4" />
               </Link>
               <div className="rounded-full border border-doctor/15 bg-white px-4 py-2 text-sm text-text-secondary shadow-sm">
-                AI assists doctors with summaries and suggestions while clinicians stay in control.
+                AI supports doctors with summaries and guidance while clinical decisions stay with the physician.
               </div>
             </div>
           </div>
@@ -116,12 +122,12 @@ export function LandingPage() {
                 <Shield className="h-5 w-5 text-teal-300" />
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">AI-Assisted Care</p>
-                  <p className="mt-1 text-lg font-semibold">AI helps doctors and does not replace them</p>
+                  <p className="mt-1 text-lg font-semibold">AI helps the doctor and does not replace the doctor</p>
                 </div>
               </div>
 
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-6 text-slate-300">
-                JeevX uses AI to summarize context, surface risks, and prepare draft next steps for clinical review. Final diagnoses, notes, and prescriptions remain under physician control.
+                JeevX uses AI to summarize context, surface risks, and prepare draft next steps for review. Final diagnoses, notes, and prescriptions remain under physician control.
               </div>
             </div>
           </div>
