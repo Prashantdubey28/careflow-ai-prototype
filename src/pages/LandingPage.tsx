@@ -135,7 +135,7 @@ export function LandingPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-12">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {featureBlocks.map((block) => (
             <div key={block.title} className="premium-panel rounded-[1.75rem] p-6">
               <block.icon className={`mb-4 h-8 w-8 ${block.color}`} />
