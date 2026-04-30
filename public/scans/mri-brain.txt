@@ -1,0 +1,25 @@
+mri-brain.jpg
+=============
+
+Generate a realistic MRI brain scan, T2-weighted, axial slice at the level of the lateral ventricles.
+
+Style: Standard T2-weighted MRI appearance — CSF (cerebrospinal fluid) appears BRIGHT WHITE, gray matter is medium gray, white matter is darker gray, bone/air is black. Dark background. No text, annotations, or patient information. Should look like a real MRI displayed on a clinical viewer.
+
+Anatomy to show clearly:
+- SKULL: Dark outer ring (cortical bone appears dark on T2)
+- CEREBRAL CORTEX: Medium gray, convoluted surface with visible gyri and sulci
+- WHITE MATTER: Slightly darker gray than cortex, forming the interior bulk of the cerebral hemispheres
+- LATERAL VENTRICLES: Bright white butterfly/horseshoe-shaped fluid-filled spaces in the center of the brain. Should be normal-sized (not enlarged), symmetric
+- FALX CEREBRI: Dark thin line running front-to-back in the midline
+- THALAMI: Medium gray structures flanking the third ventricle
+- SULCI: Thin bright white lines on the brain surface (CSF in the grooves)
+
+Key details for AI demo:
+1. Include 2-3 small (3-5mm) bright white spots in the PERIVENTRICULAR WHITE MATTER — scattered around the edges of the lateral ventricles, bilaterally. These are "white matter hyperintensities" (also called leukoaraiosis) consistent with microangiopathic changes from hypertension. They should be small, punctate, and brighter than surrounding white matter but similar brightness to CSF.
+2. The ventricles should be NORMAL sized and symmetric — no midline shift, no hydrocephalus.
+
+Dimensions: Square, 800x800 pixels minimum.
+Format: JPEG, high quality.
+Background: Pure black outside the skull.
+The brain cross-section should be roughly oval, centered in the image, showing a clear axial slice.
+Overall appearance should be unmistakably a T2-weighted MRI — bright fluid, gray brain tissue, dark bone.

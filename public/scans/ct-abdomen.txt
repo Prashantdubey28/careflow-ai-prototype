@@ -1,0 +1,24 @@
+ct-abdomen.jpg
+=============
+
+Generate a realistic CT scan of the abdomen, axial (cross-section) slice at the level of the liver and kidneys.
+
+Style: Standard medical CT window (soft tissue window), grayscale with varying gray tones. Dark background (black). No text, annotations, or patient information overlays. Should look like a real DICOM image displayed on a PACS viewer.
+
+Anatomy to show clearly:
+- LIVER: Large organ filling the right side of the image (viewer's left, patient's right), medium gray, homogeneous texture
+- SPLEEN: Smaller organ on the left side (viewer's right), similar density to liver
+- KIDNEYS: Both kidneys visible — bean-shaped structures in the posterior portion, slightly brighter cortex than medulla
+- AORTA: Small bright white circle in the center-posterior area (calcified walls)
+- VERTEBRAL BODY: Bright white bone structure at the posterior center
+- ABDOMINAL WALL: Outer ring of soft tissue and fat (fat appears darker gray)
+- INTESTINAL LOOPS: Visible in the anterior-central area with some gas (black) inside
+
+Key details for AI demo:
+1. Include a small (~1.8cm) HYPODENSE (darker) round lesion within the liver, in the right lobe (segment VI area). This should be slightly darker than surrounding liver tissue — suggesting a possible hemangioma or cyst. This is what the AI will flag.
+2. Include a small (~1.2cm) round very dark (near-black) lesion in the LEFT KIDNEY cortex — a simple renal cyst. Should have sharp margins and uniform dark interior.
+
+Dimensions: Square, 800x800 pixels minimum.
+Format: JPEG, high quality.
+Background: Pure black outside the body cross-section.
+The body cross-section should be roughly oval/elliptical, centered in the image.

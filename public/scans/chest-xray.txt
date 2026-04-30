@@ -1,0 +1,24 @@
+chest-xray.jpg
+=============
+
+Generate a realistic posterior-anterior (PA) chest X-ray image.
+
+Style: Standard medical radiograph, grayscale, dark background (black) with white/light gray anatomical structures. High contrast. No text, annotations, or patient information overlays.
+
+Anatomy to show clearly:
+- Both lung fields (right and left), appearing dark/translucent
+- Heart silhouette in the center-left, moderately sized
+- Rib cage visible as light arcs across both lung fields
+- Both clavicles visible at the top
+- Trachea and bronchi faintly visible in the center
+- Diaphragm as a smooth curved line at the bottom of both lung fields
+- Costophrenic angles sharp and visible at the bottom corners
+
+Key detail for AI demo: Include a subtle, small (~2cm) rounded opacity/spot in the RIGHT UPPER LOBE area (upper right of the image from viewer's perspective, which is patient's right). This should look like a real pulmonary nodule — slightly brighter/whiter than surrounding lung tissue, not too obvious but visible. This is what the AI overlay will highlight as a "finding."
+
+Also: The heart silhouette should appear slightly enlarged (borderline cardiomegaly) — the heart width should be just over 50% of the thoracic width.
+
+Dimensions: Square, 800x800 pixels minimum.
+Format: JPEG, high quality.
+Background: Pure black outside the body.
+Orientation: Standard PA view — "R" marker would be on the viewer's left (patient's right), but do NOT include any text markers.
